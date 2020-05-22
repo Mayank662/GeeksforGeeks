@@ -1,0 +1,14 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    nut=list((input().split()))
+    bolt=list((int,input().split()))
+    seq=[ "!", "#", "$", "%", "&", "*", "@", "^", "~"]
+    p=[]
+    for j in seq:
+        if j in nut:
+            p.append(j)
+            
+    print(*p)
+    print(*p)
+            
