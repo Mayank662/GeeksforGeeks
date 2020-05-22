@@ -1,0 +1,16 @@
+t=int(input())
+for i in range(t):
+    n,m=map(int,input().split())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    k=[]
+    for j in b:
+        while(j in a):
+            k.append(j)
+            a.remove(j)
+    a.sort()
+    for j in a:
+        k.append(j)
+    for j in k:
+        print(j,end=" ")
+    print()
